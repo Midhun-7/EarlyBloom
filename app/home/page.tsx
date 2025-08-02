@@ -31,13 +31,7 @@ export default function Home() {
             <h2 className="text-lg font-bold tracking-[-0.015em] text-[#111518] leading-tight">Early Bloom</h2>
           </div>
           <div className="flex flex-1 justify-end gap-8">
-            <div className="flex items-center gap-9">
-              {["Home", "About Us", "Blogs", "Assessment"].map((text) => (
-                <a key={text} href="#" className="text-sm font-medium text-[#111518] leading-normal">
-                  {text}
-                </a>
-              ))}
-            </div>
+            
             <button className="flex h-10 items-center justify-center overflow-hidden rounded-xl bg-[#f0f3f4] px-2.5 text-sm font-bold tracking-[0.015em] text-[#111518]">
               <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                 <path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216Z" />
