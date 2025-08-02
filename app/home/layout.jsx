@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
             {text}
           </a>
         ))}
-      </div>{" "}
+      </div>
       <main>{children}</main>
     </div>
   );
