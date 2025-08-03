@@ -4,10 +4,10 @@ import { HumanMessage , SystemMessage} from '@langchain/core/messages';
 import {SystemPrompt} from "../prompts/FamilyTree.jsx";
 
 const chatModel = new AzureChatOpenAI({
-  azureOpenAIApiKey: process.env.AZURE_OPENAI_API_KEY,
-  azureOpenAIApiInstanceName: process.env.AZURE_OPENAI_ENDPOINT,
-  azureOpenAIApiDeploymentName: process.env.AZURE_OPENAI_DEPLOYMENT_NAME,
-  azureOpenAIApiVersion: process.env.AZURE_OPENAI_API_VERSION,
+  azureOpenAIApiKey: "b358dd855c464b30abfc1b0c8e9f0157",
+  azureOpenAIApiInstanceName: "eastus.api.cognitive.microsoft.com/",
+  azureOpenAIApiDeploymentName: "gpt-4o",
+  azureOpenAIApiVersion: "2024-02-15-preview",
   temperature: 0.7,
 });
 

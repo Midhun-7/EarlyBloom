@@ -17,6 +17,7 @@ import ReactFlow, {
 import "reactflow/dist/style.css";
 import { v4 as uuidv4 } from "uuid";
 import FamilyMemberModal from "@/components/FamilyMemberModal";
+import ChatWindow from "@/components/ChatUI";
 
 const initialNodes: Node[] = [
   {
@@ -79,6 +80,7 @@ export default function FamilyTreePage() {
       >
         <button onClick={addFamilyMember}>Add Member</button>
       </div>
+      <div className="flex h-full">
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -93,6 +95,9 @@ export default function FamilyTreePage() {
         <Controls />
         <Background />
       </ReactFlow>
+
+      <ChatWindow  nodes={nodes} edges={edges}/>
+      </div>
 
       {selectedNode && (
         <FamilyMemberModal
