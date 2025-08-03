@@ -18,6 +18,8 @@ export default function HomePage() {
     "I Spy Game",
   ];
 
+  const [showModal, setShowModal] = React.useState(false);
+
   return (
     <div className="min-h-screen font-lexend bg-white text-[#111518]">
 
@@ -51,9 +53,6 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold mb-2">
             Complete your family health history to personalize insights
           </h2>
-          <button className="mt-4 bg-white text-[#111518] font-medium px-6 py-2 rounded-full">
-            Enter Family Health Data
-          </button>
         </div>
       </section>
 
