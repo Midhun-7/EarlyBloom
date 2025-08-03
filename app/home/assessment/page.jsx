@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import Layout from "../layout";
+import { useRouter } from "next/navigation";
 
 export default function Assessment0to1Page() {
+  const router = useRouter();
   return (
     <div className="flex flex-1 justify-center gap-1 px-6 py-5">
       {/* Left Section */}
@@ -16,7 +18,7 @@ export default function Assessment0to1Page() {
           }}
         >
           <div className="p-4 text-[28px] font-bold leading-tight">
-            Development Watch: 0–1 Year Olds
+            Development Watch: 3–4 Year Olds
           </div>
         </div>
 
@@ -41,7 +43,7 @@ export default function Assessment0to1Page() {
             {/* Text */}
             <div className="flex grow flex-col gap-4 px-2 py-1">
               <p className="text-lg font-bold leading-tight text-[#111518]">
-                Is your baby not making eye contact yet?
+                Is your child easily distracted?
               </p>
 
               <div className="flex flex-col gap-3 justify-between xl:flex-row xl:items-end">
@@ -51,27 +53,24 @@ export default function Assessment0to1Page() {
                     their own pace. If you're concerned, our experts are here to
                     help.
                     <span className="italic">
-                      "Eye contact is a crucial early social skill. If your baby
-                      isn't engaging in eye contact, it's worth exploring
-                      further."
+                      {" "}
+                      "Short attention spans are common, but if your child
+                      struggles to focus even during quiet play or structured
+                      activities, it's worth looking into further."
                     </span>{" "}
                     – Dr. Amelia Carter, Pediatric Neurologist.
                   </p>
                   <p className="mt-2 font-medium text-[#f97316]">
-                    Possible early sign of ASD
+                    Possible early sign of Attention Deficit Hyperactivity
+                    Disorder (ADHD)
                   </p>
                 </div>
 
                 <button
-                  onClick={() =>
-                    window.open(
-                      "https://app.gazerecorder.com/Study/Test/?StudyID=study_527b783f-4449-4569-ba59-aef6948540f4&Watch=1&Live=1",
-                      "_blank"
-                    )
-                  }
+                  onClick={() => router.push("https://go-nogo-test.streamlit.app/")}
                   className="mt-2 rounded-full bg-[#34a3f3] px-5 py-2 text-sm font-medium text-white whitespace-nowrap"
                 >
-                  Eye-Tracking Activity
+                  Attention Test
                 </button>
               </div>
             </div>

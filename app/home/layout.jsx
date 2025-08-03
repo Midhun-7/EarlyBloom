@@ -10,6 +10,7 @@ export default function Layout({ children }) {
     { label: "Pre- Diagnosis", href: "/home/prediagnosis" },
     { label: "Assessment", href: "/home/assessment" },
     { label: "Activities", href: "/home/activities" },
+    { label: "Connect", href: "/home/medical_conultants" },
   ];
 
   return (

@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google"; // or your chosen font
 import "./globals.css";
 
+const geist = Geist({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-   
-      >
+      <body className={geist.className}>
         {children}
       </body>
     </html>

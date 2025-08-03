@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export default function HomePage() {
+  const router = useRouter();
+
   const concernCards = [
     {
       text: "Is your child easily distracted?",
@@ -64,7 +67,9 @@ export default function HomePage() {
     <div className="min-h-screen font-lexend bg-white text-[#111518]">
       {/* Section 1: Concern Cards */}
       <section className="px-6 py-8">
-        <h2 className="text-2xl font-bold mb-4">Do you have any of these concerns ?</h2>
+        <h2 className="text-2xl font-bold mb-4">
+          Do you have any of these concerns ?
+        </h2>
         <div className="flex space-x-4 overflow-x-auto pb-2">
           {concernCards.map((card, i) => (
             <div
@@ -77,7 +82,7 @@ export default function HomePage() {
                 className="rounded-lg mb-3 h-40 w-full object-cover"
               />
               <p className="mb-2 font-medium">{card.text}</p>
-              <button className="bg-[#34a3f3] text-white px-4 py-1 rounded-full text-sm">
+              <button className="bg-[#34a3f3] text-white px-4 py-1 rounded-full text-sm"onClick={() => router.push("/home/assessment")}>
                 Explore
               </button>
             </div>
@@ -105,7 +110,10 @@ export default function HomePage() {
             to personalize insights
           </h2>
 
-          <button className="bg-[#34a3f3] text-white font-medium px-6 py-2 rounded-full hover:bg-white hover:border hover:text-[#34a3f3] hover:border-[#34a3f3] transition">
+          <button
+            onClick={() => router.push("/family-tree")}
+            className="bg-[#34a3f3] text-white font-medium px-6 py-2 rounded-full hover:bg-white hover:border hover:text-[#34a3f3] hover:border-[#34a3f3] transition"
+          >
             Enter Family Health Data
           </button>
         </div>
