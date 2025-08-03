@@ -58,6 +58,8 @@ export default function HomePage() {
     },
   ];
 
+  const [showModal, setShowModal] = React.useState(false);
+
   return (
     <div className="min-h-screen font-lexend bg-white text-[#111518]">
       {/* Section 1: Concern Cards */}
