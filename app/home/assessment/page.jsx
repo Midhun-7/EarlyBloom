@@ -26,31 +26,51 @@ export default function Assessment0to1Page() {
         </h3>
 
         {/* Concern Card */}
+        {/* Concern Card */}
         <div className="p-4">
-          <div className="flex flex-col items-stretch justify-start rounded-xl shadow bg-white xl:flex-row xl:items-start">
+          <div className="flex flex-col items-stretch justify-start rounded-xl shadow bg-white xl:flex-row xl:items-start gap-4 p-4">
+            {/* Image */}
             <div
-              className="aspect-video w-full rounded-xl bg-cover bg-center bg-no-repeat"
+              className="w-full xl:w-[45%] rounded-xl bg-cover bg-center bg-no-repeat min-h-[200px]"
               style={{
                 backgroundImage:
                   'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDI2_pGQOwSRbipeVgWNa_TASgaeieyA6echKEDKIMinbUIEjzrb41EOV4izSH762J6j24biQPXhV9WoJ_8AwtbbQSmwRJ0TGJ6ETw4hCE4T8RS0-Y1YcjN9BWThgkAL9H61dNj57oCpMXndLrKBMeY8GP_VgDw-XeQDbfXSTCjDXWfoZCRKHUNeJlCDw7QiEoGk0mYQ3KRr5hG1lvOnxz8eqqIJJhELjx06HVNN2XLzC_xgNF-FqG25gz8t9ejizVtuJdtNGy2-f4")',
               }}
             />
-            <div className="flex grow flex-col gap-1 px-4 py-4">
+
+            {/* Text */}
+            <div className="flex grow flex-col gap-4 px-2 py-1">
               <p className="text-lg font-bold leading-tight text-[#111518]">
                 Is your baby not making eye contact yet?
               </p>
-              <div className="flex flex-col gap-1 justify-between xl:flex-row xl:items-end">
-                <div className="text-base font-normal text-[#60798a]">
+
+              <div className="flex flex-col gap-3 justify-between xl:flex-row xl:items-end">
+                <div className="text-base font-normal text-[#60798a] leading-relaxed">
                   <p>
                     It's natural to worry, but remember, every child develops at
                     their own pace. If you're concerned, our experts are here to
-                    help. "Eye contact is a crucial early social skill. If your
-                    baby isn't engaging in eye contact, it's worth exploring
-                    further." - Dr. Amelia Carter, Pediatric Neurologist
+                    help.
+                    <span className="italic">
+                      "Eye contact is a crucial early social skill. If your baby
+                      isn't engaging in eye contact, it's worth exploring
+                      further."
+                    </span>{" "}
+                    – Dr. Amelia Carter, Pediatric Neurologist.
                   </p>
-                  <p>Possible early sign of ASD</p>
+                  <p className="mt-2 font-medium text-[#f97316]">
+                    Possible early sign of ASD
+                  </p>
                 </div>
-                <button className="mt-2 h-8 min-w-[84px] rounded-full bg-[#34a3f3] px-4 text-sm font-medium text-[#111518]">
+
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://app.gazerecorder.com/Study/Test/?StudyID=study_527b783f-4449-4569-ba59-aef6948540f4&Watch=1&Live=1",
+                      "_blank"
+                    )
+                  }
+                  className="mt-2 rounded-full bg-[#34a3f3] px-5 py-2 text-sm font-medium text-white whitespace-nowrap"
+                >
                   Eye-Tracking Activity
                 </button>
               </div>

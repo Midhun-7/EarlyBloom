@@ -9,7 +9,7 @@ export default function BlogsPage() {
         "Understanding your child’s emotions is key to raising confident, connected individuals. Learn how to build emotional intelligence from infancy.",
       author: "Dr. Evelyn Reed",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD2CLmZ0Erp2hB1ihxZDQkZkLnzKo9Pz8qR4vWKiMskD5Nz2q-sHZ8a0o6hEJS_VbhUEfG0YdnxwZxy7PiZ6ydehJY0Fw=w960",
+        "https://c8.alamy.com/comp/2XER02M/positive-parenting-emotional-connection-secure-attachment-style-in-parents-and-kid-relationship-parental-emotional-responsiveness-and-closeness-parents-comforting-a-child-flat-vector-illustration-2XER02M.jpg",
     },
     {
       title: "How Nutrition Shapes Brain Development",
@@ -17,7 +17,7 @@ export default function BlogsPage() {
         "From omega-3s to iron, discover which nutrients play a role in your baby’s cognitive development and how to build brain-boosting meals.",
       author: "Dr. Samuel Kaur",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDcmhM4JrOeNJGgqptz8u2RoXzAsZWaCUyBdKhGRhKKnT1h0a3vvWW3hET4MH2=w960",
+        "https://www.psychowellnesscenter.com/wp-content/uploads/2025/03/Maintaining-an-Emotional-Bond-With-Your-Child__.png",
     },
     {
       title: "Early Signs of Sensory Processing Issues",
@@ -25,7 +25,7 @@ export default function BlogsPage() {
         "Does your baby avoid touch or seem overly sensitive to sound? Learn what sensory red flags to watch for and when to consult a specialist.",
       author: "Dr. Amelia Carter",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD8O6qzUZaKNMxj-Nx2mH5Dd7AxJS2n2sKv3AxmQq8RrCg=w960",
+        "https://scx2.b-cdn.net/gfx/news/hires/2014/researchreve.jpg",
     },
   ];
 
